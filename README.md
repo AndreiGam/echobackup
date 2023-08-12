@@ -1,6 +1,6 @@
 # EchoBackup
 
-This bash script performs backup and transfer of a MariaDB database using FTP. It prompts the user for configuration values if they are missing and saves them to a configuration file for future use.
+This Bash script manages database backups by utilizing mariadb-dump for backup creation. The script encrypts the backup with AES-256, transfers it to a remote server via FTP, deletes backups older than 7 days, and supports AES decryption.
 
 ## Features
 - Prompt user for configuration values if they are missing.
